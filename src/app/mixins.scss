@@ -1,0 +1,16 @@
+@import './colors.scss';
+
+@mixin sidePadding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin topBottomPadding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@mixin bigTopBottomPadding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

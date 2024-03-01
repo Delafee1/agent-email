@@ -1,0 +1,25 @@
+@import '../../app/mixins.scss';
+
+.wrapper {
+  background: $blue;
+  width: 100%;
+  @include sidePadding;
+  @include topBottomPadding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+}

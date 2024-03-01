@@ -1,0 +1,89 @@
+@import '../../app/mixins.scss';
+
+.wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  @include sidePadding;
+  @include topBottomPadding;
+  overflow: hidden;
+  background: rgb(165, 224, 231);
+  color: $blue;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 400px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(50px);
+  }
+}
+
+.image {
+  position: absolute;
+  background-image: url('/banner2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 140px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.progress {
+  width: 300px;
+  height: 30px;
+  background: white;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  margin-top: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 115, 0), rgb(255, 196, 0));
+    border-radius: inherit;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 50%;
+  text-align: center;
+  position: relative;
+  padding-left: 17px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      background-image: url('/separator.png');
+      background-position: center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      left: 0;
+      bottom: -50px;
+      filter: invert(77%) sepia(27%) saturate(3232%) hue-rotate(294deg) brightness(86%) contrast(97%);
+    }
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
+}

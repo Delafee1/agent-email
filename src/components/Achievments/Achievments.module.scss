@@ -1,0 +1,17 @@
+@import '../../app/mixins.scss';
+
+.wrapper {
+  @include sidePadding;
+  @include bigTopBottomPadding;
+  color: white;
+  background: $blue;
+}
+
+.header {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $yellow;
+}
