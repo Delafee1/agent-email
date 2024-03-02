@@ -1,0 +1,43 @@
+@import '../../../app/mixins.scss';
+
+.wrapper {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  background: rgb(28, 153, 49);
+  color: white;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: $yellow;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.percentage {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: .5;
+}

@@ -7,8 +7,11 @@ type Props = {};
 const Header: React.FC<Props> = ({}) => {
   return (
     <div className={s.wrapper}>
-      <img src="/logo.png" alt="logo" className={s.image} />
-      <div className={s.text}>Ваша персональная<br />статистика за февраль</div>
+      <div className={s.content}>
+        <img src="/logo.png" alt="logo" className={s.image} />
+        <div className={s.text}>Ваша персональная<br />статистика за февраль</div>
+      </div>
+      <div className={s.separator} />
     </div>
   )
 };

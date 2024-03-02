@@ -2,9 +2,14 @@
 
 .wrapper {
   background: $blue;
-  width: 100%;
   @include sidePadding;
   @include topBottomPadding;
+  // box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  z-index: 2;
+}
+
+.content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,8 +23,15 @@
 
 .text {
   color: white;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: right;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, .2);
+  margin-top: 10px;
 }

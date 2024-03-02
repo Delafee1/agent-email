@@ -1,0 +1,52 @@
+@import '../../app/mixins.scss';
+
+.wrapper {
+  background: $blue;
+  color: white;
+  @include sidePadding;
+  @include bigTopBottomPadding;
+}
+
+.header {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.graphic {
+  height: 300px;
+  width: 100%;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.text-wrapper {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 600;
+  color: $yellow;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $yellow;
+  margin-right: 10px;
+}

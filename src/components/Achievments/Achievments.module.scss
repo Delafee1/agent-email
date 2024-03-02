@@ -2,9 +2,12 @@
 
 .wrapper {
   @include sidePadding;
-  @include bigTopBottomPadding;
+  @include topBottomPadding;
   color: white;
   background: $blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -13,5 +16,19 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: $yellow;
+  color: white;
+  letter-spacing: 1px;
 }
+
+.achievments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievment {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
