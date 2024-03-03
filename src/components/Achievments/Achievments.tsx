@@ -9,7 +9,7 @@ import s from './Achievments.module.scss';
 const Achievments: React.FC = () => {
   return (
     <Container className={s.wrapper}>
-      <div className={s.header}>Разблокированы новые достижения!</div>
+      <div className={s.header}>TAVO PASIEKIMAI!</div>
       <div className={s.achievments}>
         {achievments.map((achievment, index) => (
           <Achievment

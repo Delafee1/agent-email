@@ -1,10 +1,10 @@
 export enum ProfileInfoEnum {
-  league = 'vip lygis',
-  spent = 'panaudoti tez taskai',
-  actual = 'aktualus tez taskai',
-  euro = 'aktualus tez taskai eurais',
-  place = 'vieta reitingu lenteleje',
-  sold = 'is viso parduota kelioniu'
+  league = 'league',
+  spent = 'spent',
+  actual = 'actual',
+  euro = 'euro',
+  place = 'place',
+  sold = 'sold',
 }
 
 export const profileInfo = [
@@ -15,27 +15,27 @@ export const profileInfo = [
   },
   {
     id: ProfileInfoEnum.spent,
-    title: 'panaudoti tez taskai',
+    title: 'panaudoti tez taškai',
     icon: 'icons/spend.png',
   },
   {
     id: ProfileInfoEnum.actual,
-    title: 'aktualus tez taskai',
+    title: 'aktualūs tez taškai',
     icon: 'icons/coins.png',
   },
   {
     id: ProfileInfoEnum.euro,
-    title: 'aktualus tez taskai eurais',
+    title: 'aktualūs tez taškai eurais',
     icon: 'icons/money.png',
   },
   {
     id: ProfileInfoEnum.place,
-    title: 'vieta reitingu lenteleje',
+    title: 'vieta reitingų lentelėje',
     icon: 'icons/trophy.png',
   },
   {
     id: ProfileInfoEnum.sold,
-    title: 'is viso parduota kelioniu',
+    title: 'iš viso parduota kelionių',
     icon: 'icons/island.png',
   }
 ]

@@ -10,9 +10,9 @@ const Greetings: React.FC = () => {
         <img src="/firstblockimg.jpg" className={s.image} />
       </div>
       <div className={s.text}>
-        Привет, агент!
+        Labas, agente!
         <br />
-        Мы собрали твою статистику за прошедший месяц и готовы ею поделиться! Здесь ты можешь посмотреть свои достижения и узнать, как изменился твой рейтинг.
+        Surinkome tavo praėjusio mėnesio pardavimų statistiką! Čia gali pamatyti savo pasiekimus, dažniausiai parduodamas kryptys, Tez taškų kiekį eurais, geriausias savaitės dienas ir sužinoti, kaip pasikeitė tavo reitingas. Mes tikimės, kad ši informacija suteiks tau vertingų įžvalgų!
       </div>
     </Container>
   )

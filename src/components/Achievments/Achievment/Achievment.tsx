@@ -17,7 +17,7 @@ const Achievment: React.FC<Props> = ({title, description, image, percentage, cla
       <div className={s.text}>
         <div className={s.title}>{title}</div>
         <div className={s.description}>{description}</div>
-        <div className={s.percentage}>{percentage}% of agents have this achievement</div>
+        <div className={s.percentage}>{percentage}% agentų turi šį pasiekimą</div>
       </div>
     </div>
   )

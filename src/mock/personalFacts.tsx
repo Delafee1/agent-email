@@ -1,20 +1,20 @@
 export const personalFacts = [
   {
     firstTextPart: 'Tu pardavei',
-    secondTextPart: 'negu praeita menesi',
+    secondTextPart: 'nei praėjusį mėnesį',
     accentText: '10% daugiau',
   },
   {
-    firstTextPart: 'Tavo menesio geriausiadiena -',
+    firstTextPart: 'Tavo mėnesio geriausia diena -',
     accentText: 'Pirmadienis',
   },
   {
-    firstTextPart: 'Tez taskai si menesi tu uzdirbai',
+    firstTextPart: 'Vasario mėnesį, Tez taškais, tu uždirbai',
     accentText: '333€',
   },
   {
-    firstTextPart: 'Si menesi tu buvai',
-    secondTextPart: 'visu agentu!',
+    firstTextPart: <>Praėjusį mėnesį tu buvai tarp&nbsp;</>,
+    secondTextPart: 'visų agentų!',
     accentText: 'top 1%',
   },
 ];

@@ -27,7 +27,7 @@ const Statistics: React.FC<Props> = ({}) => {
           </div>
         </div>
         <div>
-          <div className={s.title}>Parduotu kelioniu trukme</div>
+          <div className={s.title}>Parduotų kelionių trukmė</div>
           <div className={s['list-wrapper']}>
             <div className={cn(s['list-image'], s['nights-image'])} />
             <div className={s.list}>

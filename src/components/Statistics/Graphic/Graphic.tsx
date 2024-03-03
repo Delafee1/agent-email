@@ -16,7 +16,7 @@ const Graphic: React.FC<Props> = ({ values }) => {
 
   return (
     <>
-      <div className={s.header}>График продаж путевок по дням</div>
+      <div className={s.header}>PARDUOTŲ KELIONIŲ GRAFIKAS PAGAL SAVAITĖS DIENAS</div>
       <div className={s['graphic-wrapper']}>
         <div className={s.graphic}>
           <div className={s.stripes}>

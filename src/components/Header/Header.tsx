@@ -7,7 +7,7 @@ const Header: React.FC = ({}) => {
     <div className={s.wrapper}>
       <div className={s.content}>
         <img src="/logo.png" alt="logo" className={s.image} />
-        <div className={s.text}>Ваша персональная<br />статистика за февраль</div>
+        <div className={s.text}>TAVO ASMENINĖ VASARIO<br />MĖNESIO STATISTIKA</div>
       </div>
     </div>
   )
