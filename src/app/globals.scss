@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './colors.scss';
 
 :root {
   --max-width: 1100px;
@@ -89,7 +90,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #005bbf;
+  background: $blue;
   font-family: 'Roboto', sans-serif;
 }
 

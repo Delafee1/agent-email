@@ -20,7 +20,7 @@ const Rating: React.FC = () => {
         strokeWidth={25}
         currentValue={12350}
         maxValue={15000}
-        innerText={<div className={s.circle_inner}>12350<div className={s.bottom}>из 15000</div></div>}
+        innerText={<div className={s.circle_inner}>2650 taškų<div className={s.bottom}>iki VIP lygio</div></div>}
         withBg={false}
         strokeColor='#11b811'
         className={s.circle}
