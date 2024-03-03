@@ -4,40 +4,41 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   background: rgb(28, 153, 49);
   color: white;
 }
 
 .image {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-size: cover;
   border-radius: 10px;
+  flex-shrink: 0;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: 3px;
 }
 
 .title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  color: $yellow;
+  color: $gold;
 }
 
 .description {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
 }
 
 .percentage {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   opacity: .5;
 }

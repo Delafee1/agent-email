@@ -1,12 +1,9 @@
 @import '../../app/mixins.scss';
 
 .wrapper {
-  background: $blue;
-  color: white;
-  @include sidePadding;
-  @include bigTopBottomPadding;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
 }
 
@@ -17,28 +14,22 @@
   justify-content: center;
 }
 
-.text {
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-
-  &_bold {
-    font-weight: 600;
-    color: $yellow;
-  }
-}
-
 .circle {
-  margin: 0 30px 30px;
-
   &_inner {
     content: '';
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 1;
     font-weight: 600;
+    color: $dark-blue;
+
+    .bottom {
+      font-size: 15px;
+    }
   }
 }

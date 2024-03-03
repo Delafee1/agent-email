@@ -24,7 +24,7 @@ type Props = {
   reversed?: boolean;
 
   /** Текст внутри круга */
-  innerText: React.ReactNode;
+  innerText?: React.ReactNode;
 
   /** Отображать белый фон */
   withBg?: boolean;

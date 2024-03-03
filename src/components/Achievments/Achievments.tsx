@@ -1,16 +1,16 @@
 import * as React from 'react';
 
-import s from './Achievments.module.scss';
 import { Achievment } from './Achievment';
-import { achievments } from './config';
+import { achievments } from '@/mock/achievments';
+import { Container } from '../Container';
 
-type Props = {};
+import s from './Achievments.module.scss';
 
-const Achievments: React.FC<Props> = ({}) => {
+const Achievments: React.FC = () => {
   return (
-    <div className={s.wrapper}>
+    <Container className={s.wrapper}>
+      <div className={s.header}>Разблокированы новые достижения!</div>
       <div className={s.achievments}>
-      <div className={s.header}>Achievements unlocked!</div>
         {achievments.map((achievment, index) => (
           <Achievment
             key={index}
@@ -22,8 +22,7 @@ const Achievments: React.FC<Props> = ({}) => {
           />
         ))}
       </div>
-      
-    </div>
+    </Container>
   )
 };
 

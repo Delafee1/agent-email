@@ -1,0 +1,1 @@
+export { default as PersonalFact } from './PersonalFact';

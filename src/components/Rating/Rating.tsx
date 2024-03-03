@@ -1,38 +1,31 @@
 import * as React from 'react';
 
-import s from './Rating.module.scss';
 import { CircularProgressBar } from './CircularProgressBar';
+import { Container } from '../Container';
 
-type Props = {};
+import s from './Rating.module.scss';
+import { personalFacts } from '@/mock/personalFacts';
+import { PersonalFact } from './PersonalFact';
 
-const Rating: React.FC<Props> = ({}) => {
+const Rating: React.FC = () => {
   return (
-    <div className={s.wrapper}>
+    <Container className={s.wrapper}>
       <div className={s.facts}>
-        <div className={s.text}>
-          Tu pardavei <span className={s.text_bold}>10% daugiau </span>negu praeita menesi
-        </div>
-        <div className={s.text}>
-          Tavo menesio geriausiadiena - <span className={s.text_bold}>Pirmadienis</span>
-        </div>
-        <div className={s.text}>
-          Tez taskai si menesi tu uzdirbai&nbsp;<span className={s.text_bold}>333€</span>
-        </div>
-        <div className={s.text}>
-          Si menesi tu buvai <span className={s.text_bold}>top 1% </span> visu agentu!
-        </div>
+        {personalFacts.map((fact, index) => (
+          <PersonalFact key={index} {...fact} />
+        ))}
       </div>
       <CircularProgressBar
         size={250}
         strokeWidth={25}
         currentValue={12350}
         maxValue={15000}
-        innerText={<div className={s.circle_inner}>12350</div>}
+        innerText={<div className={s.circle_inner}>12350<div className={s.bottom}>из 15000</div></div>}
         withBg={false}
-        strokeColor='#d87093'
+        strokeColor='#11b811'
         className={s.circle}
       />
-    </div>
+    </Container>
   )
 };
 

@@ -1,0 +1,19 @@
+@import '../../../app/mixins.scss';
+
+.text {
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+
+  &_bold {
+    font-weight: 600;
+    color: $green;
+    text-transform: uppercase;
+  }
+}
+
+.check {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}

@@ -1,46 +1,53 @@
 @import '../../app/mixins.scss';
 
 .wrapper {
-  background: $blue;
-  color: white;
-  @include sidePadding;
-  @include bigTopBottomPadding;
+  padding: 0 0 30px;
 }
 
-.header {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  letter-spacing: 1px;
-}
-
-.graphic {
-  height: 300px;
-  width: 100%;
-  border: 1px solid white;
-  margin-bottom: 20px;
-}
-
-.text-wrapper {
-  display: flex;
+.stats-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   font-size: 16px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.list-wrapper {
+  display: flex;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.list-image {
+  background-size: cover;
+  height: 80px;
+  flex-grow: 1;
+  border: 2px solid white;
+  background-position: bottom;
+  border-radius: 10px;
+}
+
+.country-image {
+  background-image: url('/turkey.jpeg');
+}
+
+.nights-image {
+  background-image: url('/hotel.jpg');
 }
 
 .title {
   font-weight: 600;
-  color: $yellow;
+  color: $orange;
   margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .text {
   font-weight: 400;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+  width: 100%;
 }
 
 .icon {
